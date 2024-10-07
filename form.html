@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Skill Modal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <button id="addSkillBtn" class="add-skill-button">Add Skill</button>
+  </div>
+<!-- Modal -->
+<div id="skillModal" class="modal">
+  <div class="modal-content">
+    <h2>Add Skill</h2>
+    <form>
+      <label for="domain">Domain</label>
+      <input type="text" id="domain" value="Front End Developer" readonly>
+
+      <h3>Skills</h3>
+      <div class="skills-list">
+        <div class="skill-item">
+          <input type="text" placeholder="Skill">
+          <input type="number" placeholder="Proficiency (%)">
+        </div>
+        <div class="skill-item">
+          <input type="text" placeholder="Skill">
+          <input type="number" placeholder="Proficiency (%)">
+        </div>
+        <div class="skill-item">
+          <input type="text" placeholder="Skill">
+          <input type="number" placeholder="Proficiency (%)">
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="add-button">Add Skill</button>
+        <button type="button" id="closeModal" class="cancel-button">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
